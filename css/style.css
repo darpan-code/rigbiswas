@@ -5,6 +5,12 @@
     font-family: 'Lato', sans-serif;
 }
 
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
 .nav-bar-bg{
     background-color: #f9f3e8;
     padding: 0px 30px;
@@ -63,36 +69,138 @@
     margin: 0 0 0px 20px;
 }
 
-/* .backgeound-img-scroll{
-    width: 500vw;
+.home-gallary-main{
+    overflow: hidden;
+}
+
+.home-gallary{
+    width:  5076px;
+    margin-top: 56px;
+    min-height: 75vh;
     -webkit-animation: slide 40s linear infinite;
-    animation: slide 20s linear infinite;
+    animation: slide 40s linear infinite;
     background: url(../image/bg-img.webp) repeat-x;
     background-size: contain;
 }
 
-.bg-quote-img{
+.home-gallary h1{
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    max-width: 800px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 41%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: bold;
+    /* margin-bottom: 20px; */
+}
+
+.wedding-box-main{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.wedding-box{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.wedding-main{
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center!important;
+    max-width: 33.333333%;
+    margin-bottom: 30px;
+}
+
+.wedding-img{
+    border-radius: 4px!important;
+    width: 100%;
+}
+
+.wedding-img-overlay{
+    overflow: hidden;
+}
+
+.wedding-main h4{
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.meta{
+    margin-bottom: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #909090;
+    letter-spacing: 1px;
+}
+
+.slash{
+    margin: 0 13px;
+}
+
+
+.wedding-btn{
+    color: #fff !important;
+    text-decoration: none;
+    background: #f5c463;
+    border: 0;
+    margin-bottom: 10px;
+    padding: 17px 25px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+    border-radius: 30px;
+    text-shadow: none;
+    transition: all .15s ease-in-out;
+    display: inline-block;
+    box-shadow: 0 5px 20px rgba(0,0,0,.04)!important;
+}
+
+.wedding-btn:hover{
+    background: #658bc0;
+}
+
+.wedding-btn-box{
+   display: flex;
+   justify-content: center;
+}
+
+/* .bg-quote-img{
     background-image: url(../image/bg-img2.webp);
     background-position: 50%;
     position: relative;
     background-size: cover;
     background-attachment: fixed !important;
-}
+} */
 
-.quote-img{
+/* .quote-img{
     -webkit-backdrop-filter: brightness(50%);
     backdrop-filter: brightness(50%);
-}
+} */
 
 @keyframes slide {
     from {background-position:0 0;}
-    to {background-position: -200vw;}
-} */
+    to {background-position: -2000px;}
+}
 
 
 @media (max-width: 1024px) {
     .social-icon {
         display: none;
+    }
+
+    .wedding-box{
+        max-width: 960px;
     }
 }
 
@@ -134,5 +242,25 @@
     }
     .nav-menu2{
         display: flex;
+    }
+
+    .wedding-main{
+        max-width: 50%;
+    }
+    
+    .wedding-box{
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 426px) {
+    .wedding-box{
+        flex-direction: column;
+    }
+
+    .wedding-main{
+        max-width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
