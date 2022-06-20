@@ -567,6 +567,14 @@ input{
 	appearance: none;
 }
 
+a {
+    text-decoration: none !important;
+}
+
+a:focus, a:hover {
+    text-decoration: none !important;
+}
+
 .service-sub-container{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -708,6 +716,76 @@ input{
     line-height: normal;
 }
 
+.blog-sub-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.blog-sub-container-h2{
+    font-size: 22px !important;
+    line-height: 34px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.blog-sub-container-p{
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.blog-boxs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-box-main-container{
+    margin-bottom: 30px;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.blog-box-img img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.blog-box-heading {
+    margin-bottom: 10px!important;
+}
+
+.blog-box-heading a{
+    color: #000!important;
+    font-size: 21px!important;
+    line-height: 34px;
+}
+
+.blog-box-heading a:hover{
+    color: #f5c463!important;
+    transition: all .15s ease-in-out;
+}
+
+.blog-box-date {
+    margin-bottom: 15px!important;
+}
+
+.blog-box-date span{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #909090;
+    letter-spacing: 1px;
+    margin-bottom: 15px!important;
+    line-height: 28px;
+}
 
 
 /* media query  */
@@ -794,6 +872,10 @@ input{
     }
 
     .counting-sub-container{
+        max-width: 990px;
+    }
+
+    .blog-sub-container{
         max-width: 990px;
     }
 
@@ -943,6 +1025,16 @@ input{
     .counting-sub-container{
         max-width: 750px;
     }
+
+    .blog-sub-container{
+        max-width: 750px;
+    }
+    
+    .blog-box-main-container{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -1065,6 +1157,25 @@ input{
         margin-bottom: 30px;
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .blog-box-main-container{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .blog-sub-container{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .blog-sub-container-h2 {
+        font-size: 20px !important;
+    }
+
+    .blog-sub-container-p {
+        font-size: 20px !important;
     }
 
 }
