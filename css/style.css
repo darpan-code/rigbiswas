@@ -866,6 +866,37 @@ footer{
     border-color: hsla(0,0%,100%,.1);
 }
 
+.whatsapp-icon-main{
+    background: #25d366;
+    color: white!important;
+    position: fixed;
+    z-index: 999;
+    bottom: 10px;
+    right: 10px;
+    font-size: 30px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    height: 0;
+    padding: 30px;
+    text-decoration: none;
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow:0 0 0 0 rgba(37, 211, 102, 0.5)
+    }
+    80% {
+        box-shadow:0 0 0 14px rgba(37, 211, 102, 0)}
+    }
+
 /* media query  */
 
 @media (max-width: 1024px) {
