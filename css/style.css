@@ -526,8 +526,11 @@
 }
 
 input:focus-visible{
-    outline: none;
+    outline: none!important;
+}
 
+select:focus-visible{
+    outline: none!important;
 }
 
 .appointment-form-input-submit{
@@ -811,5 +814,12 @@ select {
     .appointment-form-input{
         width: 100%;
         margin-left: 8px;
+    }
+}
+
+@media (max-width: 321px) {
+    .appointment-sub-container{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
