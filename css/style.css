@@ -799,7 +799,7 @@ input{
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
     #nav-btn {
         display: block;
         font-size: 28px;
@@ -945,7 +945,7 @@ input{
     }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 767px) {
     .wedding-box{
         flex-direction: column;
     }
