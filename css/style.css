@@ -401,7 +401,6 @@
     box-shadow: 0 5px 20px rgba(0,0,0,.04)!important;
 }
 
-
 .modal-dialog{
     max-width: 75%;
 }
@@ -500,7 +499,6 @@
     justify-content: center;
 }
 
-
 .appointment-form-input{
     height: 48px;
     font-size: 16px;
@@ -595,8 +593,6 @@ input{
     text-align: left;
     flex: 0 0 50%;
     max-width: 50%;
-    /* padding-right: 15px;
-    padding-left: 15px; */
     margin-bottom: 30px;
 }
 
@@ -657,6 +653,61 @@ input{
     color: #f5c463!important;
     transition: all .15s ease-in-out;
 }
+
+.counting-sub-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.counting-main-container{
+    background: #eef1f5;
+}
+
+.counting-boxs{
+    display: flex;
+}
+
+.counting-box-cover{
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.counting-box{
+    padding: 40px 40px 20px;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,.04)!important;
+}
+
+.counting-box-inner{
+    display: flex;
+    justify-content: center;
+}
+
+.counting-img img{
+    margin-right: 25px!important;
+    height: 60px;
+}
+
+.counting-number > div{
+    font-size: 45px;
+    line-height: normal;
+    font-weight: 400;
+}
+
+.counting-number > p{
+    margin-bottom: 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: normal;
+}
+
 
 
 /* media query  */
@@ -740,6 +791,10 @@ input{
 
     .service-img{
         width: 136%!important;
+    }
+
+    .counting-sub-container{
+        max-width: 990px;
     }
 
 }
@@ -884,6 +939,10 @@ input{
         padding: 50px 20px;
         border-radius: 0px 0px 4px 4px;
     }
+
+    .counting-sub-container{
+        max-width: 750px;
+    }
 }
 
 @media (max-width: 426px) {
@@ -995,6 +1054,19 @@ input{
     .service-right{
         padding: 30px 20px;
     }
+
+    .counting-boxs{
+        flex-direction: column;
+    }
+
+    .counting-box-cover{
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-bottom: 30px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
 }
 
 @media (max-width: 376px) {
@@ -1012,6 +1084,11 @@ input{
 
     .service-left {
         height: 300px;
+    }
+
+    .counting-box-cover{
+        padding-right: 15px;
+        padding-left: 15px;
     }
 
 }
