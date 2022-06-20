@@ -462,7 +462,6 @@
     position: relative;
     background-size: cover;
     background-attachment: fixed !important;
-    margin-bottom: 500px;
 }
 
 .appointment-sub-container{
@@ -519,6 +518,7 @@
     color: #fff;
     display: inline-block;
     vertical-align: middle;
+    font-weight: 400;
 }
 
 .appointment-form-input-submit:hover{
@@ -563,6 +563,99 @@ select:focus-visible{
 
 select {
 	appearance: none;
+}
+
+input{
+	appearance: none;
+}
+
+.service-sub-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.service-sub-container h2{
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.service-sub-container p{
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.service-box-main-container{
+    display: flex;
+    text-align: left;
+    flex: 0 0 50%;
+    max-width: 50%;
+    /* padding-right: 15px;
+    padding-left: 15px; */
+    margin-bottom: 30px;
+}
+
+.service-left{
+    height: 100%;
+    min-width: 50%;
+    background: #fff;
+    border-radius: 4px 0px 0px 4px;
+    overflow: hidden!important;
+}
+
+.service-left img{
+    width: 104%;
+}
+
+.service-heading a{
+    text-decoration: none;
+    color: #000!important;
+}
+
+.service-right h3{
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 15px!important;
+    font-weight: 400;
+}
+.service-right p{
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 20px!important;
+    text-align: left!important;
+    font-weight: 400;
+}
+
+.service-right {
+    height: 100% !important;
+    padding: 30px 20px 30px 35px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.service-boxs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.arrow-link a{
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #909090!important;
+    text-decoration: none;
+}
+
+.arrow-link a:hover{
+    color: #f5c463!important;
+    transition: all .15s ease-in-out;
 }
 
 
@@ -610,6 +703,45 @@ select {
     .appointment-sub-container2 {
         max-width: 83.333333%;
     }
+
+    
+    .service-sub-container{
+        max-width: 960px;
+    }
+
+    .service-left{
+        position: relative;
+    }
+
+    .service-left img {
+        position: absolute;
+        left: -38px;
+        top: 0;
+        width: 130%;
+        height: auto;
+    }
+
+    .service-box-main-container {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .service-left img {
+        height: auto;
+    }
+
+    .service-right p{
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .service-img{
+        width: 136%!important;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -721,6 +853,37 @@ select {
     .appointment-sub-container2 {
         max-width: 100%;
     }
+
+    .service-sub-container{
+        max-width: 720px;
+    }
+
+    .service-box-main-container{
+        flex-direction: column;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0px!important;
+        padding-left: 0px !important;
+    }
+
+    .service-left{
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+        border-radius: 4px !important;
+    }
+
+    .service-left img{
+        width: 100% !important;
+        left: 0px;
+        top: -190px;
+    }
+
+    .service-right{
+        height: auto!important;
+        padding: 50px 20px;
+        border-radius: 0px 0px 4px 4px;
+    }
 }
 
 @media (max-width: 426px) {
@@ -815,6 +978,30 @@ select {
         width: 100%;
         margin-left: 8px;
     }
+
+    .service-sub-container{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .service-left img {
+        top: 0;
+    }
+
+    .service-left{
+        height: 410px;
+    }
+
+    .service-right{
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 376px) {
+    .service-left {
+        height: 360px;
+    }
+
 }
 
 @media (max-width: 321px) {
@@ -822,4 +1009,9 @@ select {
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    .service-left {
+        height: 300px;
+    }
+
 }
